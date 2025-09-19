@@ -398,6 +398,7 @@
         .about-content h3 {
             font-size: 1.8rem;
             margin-bottom: 20px;
+            color: #fff;
         }
 
         .about-content p {
@@ -417,6 +418,7 @@
             background-color: #222;
             border-radius: 20px;
             font-size: 0.9rem;
+            color: #fff;
         }
 
         /* Activities Section */
@@ -449,6 +451,7 @@
             justify-content: center;
             font-size: 2.5rem;
             background: linear-gradient(to right, #333, #000);
+            color: #fff;
         }
 
         .activity-content {
@@ -459,6 +462,7 @@
         .activity-content h3 {
             font-size: 1.3rem;
             margin-bottom: 10px;
+            color: #fff;
         }
 
         .activity-content p {
@@ -496,7 +500,7 @@
 
         .gallery-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 30px;
         }
@@ -530,11 +534,22 @@
             opacity: 0;
             transform: translateY(20px);
             transition: all 0.3s ease;
+            color: #fff;
         }
 
         .gallery-item:hover .gallery-caption {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        .gallery-caption h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .gallery-caption p {
+            font-size: 0.9rem;
+            color: #ddd;
         }
 
         /* Lightbox */
@@ -586,6 +601,7 @@
             color: #fff;
             font-size: 2rem;
             cursor: pointer;
+            z-index: 1002;
         }
 
         .lightbox-nav {
@@ -596,6 +612,7 @@
             justify-content: space-between;
             transform: translateY(-50%);
             padding: 0 20px;
+            z-index: 1002;
         }
 
         .lightbox-btn {
@@ -754,6 +771,18 @@
             .sidebar-links a {
                 font-size: 1.2rem;
             }
+            
+            .gallery-caption {
+                padding: 10px;
+            }
+            
+            .gallery-caption h3 {
+                font-size: 1rem;
+            }
+            
+            .gallery-caption p {
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -854,131 +883,309 @@
     <section id="gallery">
         <h2 class="section-title" data-aos="fade-right">Gallery</h2>
         <div class="gallery-container">
-            <!-- Gallery Items - Diperbaiki struktur HTML -->
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100" data-category="art">
-                <img src="img1.jpeg" alt="Karya 1" class="gallery-img">
+            <!-- Gallery Items - 43 gambar dengan struktur yang benar -->
+            <!-- Gambar 1-18 -->
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100" data-category="class">
+                <img src="img1.jpeg" alt="Kelas 5 Dinamik 1" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Abstrak Modern</h3>
-                    <p>Karya seni kontemporer dengan teknik cat minyak</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Kegiatan belajar mengajar di kelas</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200" data-category="craft">
-                <img src="img2.jpeg" alt="Karya 2" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150" data-category="class">
+                <img src="img2.jpeg" alt="Kelas 5 Dinamik 2" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Geometri Harmonik</h3>
-                    <p>Eksplorasi bentuk geometris dengan warna monokrom</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Sesi pembelajaran bersama guru</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300" data-category="photo">
-                <img src="img3.jpeg" alt="Karya 3" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200" data-category="class">
+                <img src="img3.jpeg" alt="Kelas 5 Dinamik 3" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Potret Diri</h3>
-                    <p>Ekspresi diri melalui media fotografi digital</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Aktivitas kelompok belajar</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400" data-category="project">
-                <img src="img4.jpeg" alt="Karya 4" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250" data-category="class">
+                <img src="img4.jpeg" alt="Kelas 5 Dinamik 4" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Proyek Sains</h3>
-                    <p>Eksperimen sains tentang tumbuhan dan fotosintesis</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Presentasi hasil karya siswa</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500" data-category="art">
-                <img src="img5.jpeg" alt="Karya 5" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300" data-category="class">
+                <img src="img5.jpeg" alt="Kelas 5 Dinamik 5" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Ilustrasi Digital</h3>
-                    <p>Ilustrasi digital dengan tema cerita rakyat</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Diskusi kelompok dalam pembelajaran</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img6.jpeg" alt="Karya 6" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="350" data-category="class">
+                <img src="img6.jpeg" alt="Kelas 5 Dinamik 6" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Eksperimen sains di laboratorium</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img7.jpeg" alt="Karya 7" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400" data-category="class">
+                <img src="img7.jpeg" alt="Kelas 5 Dinamik 7" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Praktikum kimia</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img8.jpeg" alt="Karya 8" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="450" data-category="class">
+                <img src="img8.jpeg" alt="Kelas 5 Dinamik 8" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Pelajaran komputer</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img9.jpeg" alt="Karya 9" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500" data-category="class">
+                <img src="img9.jpeg" alt="Kelas 5 Dinamik 9" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Sesi tanya jawab dengan guru</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img10.jpeg" alt="Karya 10" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="550" data-category="class">
+                <img src="img10.jpeg" alt="Kelas 5 Dinamik 10" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Belajar matematika tambahan</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img11.jpeg" alt="Karya 11" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="class">
+                <img src="img11.jpeg" alt="Kelas 5 Dinamik 11" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Pelajaran biologi</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img12.jpeg" alt="Karya 12" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="650" data-category="class">
+                <img src="img12.jpeg" alt="Kelas 5 Dinamik 12" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Diskusi kelompok studi</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img13.jpeg" alt="Karya 13" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="700" data-category="class">
+                <img src="img13.jpeg" alt="Kelas 5 Dinamik 13" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Pelajaran fisika</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img14.jpeg" alt="Karya 14" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="750" data-category="class">
+                <img src="img14.jpeg" alt="Kelas 5 Dinamik 14" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Aktivitas outdoor learning</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img15.jpeg" alt="Karya 15" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="800" data-category="class">
+                <img src="img15.jpeg" alt="Kelas 5 Dinamik 15" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Presentasi proyek sains</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img16.jpeg" alt="Karya 16" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="850" data-category="class">
+                <img src="img16.jpeg" alt="Kelas 5 Dinamik 16" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Belajar programming</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img17.jpeg" alt="Karya 17" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="900" data-category="class">
+                <img src="img17.jpeg" alt="Kelas 5 Dinamik 17" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Kerja kelompok</p>
                 </div>
             </div>
-            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600" data-category="craft">
-                <img src="img18.jpeg" alt="Karya 18" class="gallery-img">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="950" data-category="class">
+                <img src="img18.jpeg" alt="Kelas 5 Dinamik 18" class="gallery-img">
                 <div class="gallery-caption">
-                    <h3>Kerajinan Tangan</h3>
-                    <p>Karya daur ulang dari bahan bekas menjadi barang berguna</p>
+                    <h3>Kelas 5 Dinamik</h3>
+                    <p>Eksperimen laboratorium</p>
+                </div>
+            </div>
+            
+            <!-- Gambar 19-43 (tambahkan sesuai kebutuhan) -->
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1000" data-category="activity">
+                <img src="img19.jpeg" alt="Kegiatan 1" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Acara olahraga bersama</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1050" data-category="activity">
+                <img src="img20.jpeg" alt="Kegiatan 2" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Lomba antar kelas</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1100" data-category="activity">
+                <img src="img21.jpeg" alt="Kegiatan 3" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Pentas seni</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1150" data-category="activity">
+                <img src="img22.jpeg" alt="Kegiatan 4" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Karya siswa</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1200" data-category="activity">
+                <img src="img23.jpeg" alt="Kegiatan 5" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Pameran sains</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1250" data-category="activity">
+                <img src="img24.jpeg" alt="Kegiatan 6" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Kerja bakti</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1300" data-category="activity">
+                <img src="img25.jpeg" alt="Kegiatan 7" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Study tour</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1350" data-category="activity">
+                <img src="img26.jpeg" alt="Kegiatan 8" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Perkemahan</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1400" data-category="activity">
+                <img src="img27.jpeg" alt="Kegiatan 9" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Seminar pendidikan</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1450" data-category="activity">
+                <img src="img28.jpeg" alt="Kegiatan 10" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Workshop kreatif</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1500" data-category="activity">
+                <img src="img29.jpeg" alt="Kegiatan 11" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Lomba debat</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1550" data-category="activity">
+                <img src="img30.jpeg" alt="Kegiatan 12" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Peringatan hari besar</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1600" data-category="activity">
+                <img src="img31.jpeg" alt="Kegiatan 13" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul musik</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1650" data-category="activity">
+                <img src="img32.jpeg" alt="Kegiatan 14" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul tari</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1700" data-category="activity">
+                <img src="img33.jpeg" alt="Kegiatan 15" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul pramuka</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1750" data-category="activity">
+                <img src="img34.jpeg" alt="Kegiatan 16" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul robotik</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1800" data-category="activity">
+                <img src="img35.jpeg" alt="Kegiatan 17" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul jurnalistik</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1850" data-category="activity">
+                <img src="img36.jpeg" alt="Kegiatan 18" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul seni rupa</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1900" data-category="activity">
+                <img src="img37.jpeg" alt="Kegiatan 19" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul teater</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="1950" data-category="activity">
+                <img src="img38.jpeg" alt="Kegiatan 20" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul fotografi</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="2000" data-category="activity">
+                <img src="img39.jpeg" alt="Kegiatan 21" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul memasak</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="2050" data-category="activity">
+                <img src="img40.jpeg" alt="Kegiatan 22" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul gardening</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="2100" data-category="activity">
+                <img src="img41.jpeg" alt="Kegiatan 23" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul coding</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="2150" data-category="activity">
+                <img src="img42.jpeg" alt="Kegiatan 24" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul bahasa asing</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="2200" data-category="activity">
+                <img src="img43.jpeg" alt="Kegiatan 25" class="gallery-img">
+                <div class="gallery-caption">
+                    <h3>Kegiatan Sekolah</h3>
+                    <p>Ekskul entrepreneurship</p>
                 </div>
             </div>
         </div>
@@ -997,7 +1204,7 @@
                 <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
-        <p>Daripada <strong>Fizam.Dev</strong> | 5 Dinamik | HackDev</p>
+        <p>Developer by <strong>Fizam.Dev</strong> | 5 Dinamik | HackDev</p>
         <a href="#" class="back-to-top" id="backToTop">
             <i class="fas fa-arrow-up"></i>
         </a>
@@ -1037,7 +1244,6 @@
         const scrollDownBtn = document.getElementById('scrollDown');
         const backToTopBtn = document.getElementById('backToTop');
         const navbar = document.querySelector('.navbar');
-        const filterBtns = document.querySelectorAll('.filter-btn');
         const galleryItems = document.querySelectorAll('.gallery-item');
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightboxImg');
@@ -1045,9 +1251,6 @@
         const lightboxClose = document.getElementById('lightboxClose');
         const lightboxPrev = document.getElementById('lightboxPrev');
         const lightboxNext = document.getElementById('lightboxNext');
-
-        // Variables for light
-        <!-- Saya sudah melanjutkan kode dari bagian yang terputus -->
 
         // Variables for lightbox navigation
         let currentImageIndex = 0;
@@ -1120,28 +1323,6 @@
             });
         });
 
-        // Gallery filtering
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Remove active class from all buttons
-                filterBtns.forEach(b => b.classList.remove('active'));
-                
-                // Add active class to clicked button
-                btn.classList.add('active');
-                
-                const filterValue = btn.getAttribute('data-filter');
-                
-                // Filter gallery items
-                galleryItems.forEach(item => {
-                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                        item.style.display = 'block';
-                    } else {
-                        item.style.display = 'none';
-                    }
-                });
-            });
-        });
-
         // Lightbox functionality
         galleryItems.forEach((item, index) => {
             item.addEventListener('click', () => {
@@ -1154,10 +1335,11 @@
             const imageSrc = galleryImages[index].querySelector('.gallery-img').src;
             const imageAlt = galleryImages[index].querySelector('.gallery-img').alt;
             const caption = galleryImages[index].querySelector('.gallery-caption h3').textContent;
+            const description = galleryImages[index].querySelector('.gallery-caption p').textContent;
             
             lightboxImg.src = imageSrc;
             lightboxImg.alt = imageAlt;
-            lightboxCaption.textContent = caption;
+            lightboxCaption.innerHTML = `<h3>${caption}</h3><p>${description}</p>`;
             
             lightbox.classList.add('open');
             document.body.style.overflow = 'hidden';
@@ -1181,10 +1363,11 @@
             const imageSrc = galleryImages[currentImageIndex].querySelector('.gallery-img').src;
             const imageAlt = galleryImages[currentImageIndex].querySelector('.gallery-img').alt;
             const caption = galleryImages[currentImageIndex].querySelector('.gallery-caption h3').textContent;
+            const description = galleryImages[currentImageIndex].querySelector('.gallery-caption p').textContent;
             
             lightboxImg.src = imageSrc;
             lightboxImg.alt = imageAlt;
-            lightboxCaption.textContent = caption;
+            lightboxCaption.innerHTML = `<h3>${caption}</h3><p>${description}</p>`;
         }
 
         // Lightbox event listeners
@@ -1226,4 +1409,4 @@
         });
     </script>
 </body>
-</html>
+    </html>
