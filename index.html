@@ -785,6 +785,55 @@
                 font-size: 0.8rem;
             }
         }
+/* Quote Section */
+#quote {
+    background-color: #111;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: #fff;
+    margin: 20px 0;
+    opacity: 0.7;
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #fff;
+    font-style: italic;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Responsive Styles untuk Quote Section */
+@media (max-width: 768px) {
+    #quote {
+        padding: 60px 20px;
+    }
+    
+    .quote-text {
+        font-size: 1.2rem;
+    }
+    
+    .quote-icon {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .quote-text {
+        font-size: 1.1rem;
+    }
+}
     </style>
 </head>
 <body>
@@ -812,6 +861,8 @@
             <li><a href="#intro">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#activities">Aliran</a></li>
+ <li><a href="#qoute">Qoute</a></li>
+
             <li><a href="#gallery">Gallery</a></li>
         </ul>
     </div>
@@ -879,7 +930,20 @@
             </div>
         </div>
     </section>
-
+<!-- Quote Section -->
+<section id="quote">
+    <div class="quote-container" data-aos="fade-up">
+        <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+        </div>
+        <p class="quote-text">
+            "Kenangan Kelas 5 tercipta daripada gabungan keceriaan dan cabaran. Kita belajar bahawa perubahan itu kuasa, asalkan kita terus berpegangan tangan, tak kira apa jua subjek yang datang."
+        </p>
+        <div class="quote-icon">
+            <i class="fas fa-quote-right"></i>
+        </div>
+    </div>
+</section>
     <!-- Gallery Section -->
     <section id="gallery">
         <h2 class="section-title" data-aos="fade-right">Gallery</h2>
