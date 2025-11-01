@@ -1043,6 +1043,185 @@
             background-color: var(--brand-gray-dark);
             transform: translateY(-2px);
         }
+        /* Guru Section */
+#guru {
+    background-color: #111;
+    padding: 100px 40px;
+}
+
+/* Marquee untuk Guru */
+.marquee-wrapper-guru {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track-guru {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll-guru 30s linear infinite;
+}
+
+.marquee-wrapper-guru:hover .marquee-track-guru {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll-guru {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Gaya Kad Guru */
+.guru-card {
+    width: 85vw;
+    max-width: 340px;
+    height: 60vh;
+    max-height: 500px;
+    margin: 0 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.guru-card:hover {
+    transform: scale(1.02);
+}
+
+/* Overlay untuk Kad Guru */
+.card-overlay-guru {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Teks Menegak untuk Guru */
+.overlay-text-guru {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Khusus untuk Guru */
+.modal-guru {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content-guru {
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    margin: 10vh auto;
+}
+
+.close-button-guru {
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.close-button-guru:hover {
+    transform: scale(1.1) rotate(90deg);
+}
+
+.modal-image-container-guru {
+    height: 60vh;
+    max-height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.modal-info-guru {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(26, 26, 26, 1), rgba(26, 26, 26, 0.8), transparent);
+    box-sizing: border-box;
+}
+
+.modal-info-guru .role {
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: 500;
+}
+
+.modal-info-guru .name {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin: 5px 0 0 0;
+    color: #fff;
+}
+
+.social-button-guru {
+    width: calc(100% - 40px);
+    margin: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-button-guru .fas {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.social-button-guru:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
     </style>
 </head>
 <body>
@@ -1052,6 +1231,7 @@
         <ul class="nav-links">
             <li><a href="#intro">Home</a></li>
             <li><a href="#about">About</a></li>
+             <li><a href="#guru">Educators</a></li>
              <li><a href="#classmate">Classmate</a></li>
             <li><a href="#activities">Aliran</a></li>
             <li><a href="#quote">Quote</a></li>
@@ -1071,6 +1251,7 @@
         <ul class="sidebar-links">
             <li><a href="#intro">Home</a></li>
             <li><a href="#about">About</a></li>
+             <li><a href="#guru">Educators</a></li>
              <li><a href="#classmate">Classmate</a></li>
             <li><a href="#activities">Aliran</a></li>
  <li><a href="#quote">Quote</a></li>
@@ -1117,6 +1298,129 @@
             </div>
         </div>
     </section>
+    <!-- Guru Section -->
+<section id="guru">
+    <h2 class="section-title" data-aos="fade-right">Educators</h2>
+    <div class="marquee-wrapper-guru">
+        <div class="marquee-track-guru"></div>
+    </div>
+</section>
+
+<div id="guruModal" class="modal-guru"></div>
+        <script>
+    // JavaScript untuk Guru Section
+document.addEventListener("DOMContentLoaded", function() {
+    // Data untuk Guru
+    const allGuru = [
+        {
+            name: "Lawrance",
+            role: "Cikgu",
+            img: "guru1.jpg",
+            verticalText: "W I N",
+            buttonText: "Sains"
+        },
+        {
+            name: "Hanedah",
+            role: "Cikgu",
+            img: "guru2.jpg",
+            verticalText: "H N D",
+            buttonText: " Matematik"
+        },
+        {
+            name: "Rahimah",
+            role: "Cikgu",
+            img: "guru3.jpg",
+            verticalText: "R H M",
+            buttonText: "Bahasa Melayu"
+        },
+        {
+            name: "Lamahia",
+            role: "Cikgu",
+            img: "guru4.jpg",
+            verticalText: "L A M",
+            buttonText: "Sains Komp"
+        },
+        {
+            name: "Asri",
+            role: "Cikgu",
+            img: "guru5.jpg",
+            verticalText: "A S R",
+            buttonText: "Sejarah"
+        }
+    ];
+
+    const marqueeTrackGuru = document.querySelector('.marquee-track-guru');
+    const modalContainerGuru = document.getElementById('guruModal');
+
+    // Fungsi untuk buat kad guru
+    function createGuruCard(data) {
+        const card = document.createElement('div');
+        card.className = 'guru-card';
+        card.style.backgroundImage = `url(${data.img})`;
+
+        let verticalText = data.verticalText || data.name.split('').join(' ');
+
+        card.innerHTML = `
+            <div class="card-overlay-guru">
+                <div class="overlay-text-guru">${verticalText}</div>
+            </div>
+        `;
+
+        card.addEventListener('click', () => {
+            showGuruModal(data);
+        });
+
+        return card;
+    }
+
+    // Fungsi untuk buat modal guru
+    function showGuruModal(data) {
+        modalContainerGuru.innerHTML = `
+            <div class="modal-content-guru">
+                <span class="close-button-guru" id="closeGuruModal"><i class="fas fa-times"></i></span>
+                
+                <div class="modal-image-container-guru" style="background-image: url(${data.img});">
+                    <div class="modal-info-guru">
+                        <p class="role">${data.role}</p>
+                        <p class="name">${data.name}</p>
+                    </div>
+                </div>
+
+                <button class="social-button-guru">
+                    <i class="fas fa-chalkboard-teacher"></i> 
+                    ${data.buttonText || 'Guru Kelas'}
+                </button>
+            </div>
+        `;
+        
+        modalContainerGuru.style.display = "block";
+        document.getElementById('closeGuruModal').onclick = closeGuruModal;
+    }
+
+    function closeGuruModal() {
+        modalContainerGuru.style.display = "none";
+    }
+    
+    // Jana kad guru + klon
+    const originalGuruData = [];
+    
+    allGuru.forEach((guru) => {
+        originalGuruData.push({...guru});
+    });
+    
+    [...originalGuruData, ...originalGuruData].forEach((data) => {
+        const card = createGuruCard(data);
+        marqueeTrackGuru.appendChild(card);
+    });
+
+    // Tutup modal jika klik di luar
+    window.onclick = function(event) {
+        if (event.target === modalContainerGuru) {
+            closeGuruModal();
+        }
+    }
+});
+</script>
   <section  id="classmate">
        <h2 class="section-title" data-aos="fade-right">Classmate</h2>
         <div class="marquee-wrapper">
